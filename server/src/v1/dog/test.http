@@ -2,21 +2,21 @@
 
 
 ### Get all dogs
-GET {{host}}/?fields=name&offset=0&limit=2 HTTP/1.1
+GET {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDEwMzE4fQ.bOs0LTv4E4YXm5zAXzhcCT5m7Askj7EmuWxkJHxLyWc HTTP/1.1
 
 
 ### Create new dogs
-POST {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDEwODI3fQ.9nHtuQAiN-d1A42PcjlrUsy0dXDspGy9ZI8SfPqUZEU HTTP/1.1
+POST {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDEwMzE4fQ.bOs0LTv4E4YXm5zAXzhcCT5m7Askj7EmuWxkJHxLyWc HTTP/1.1
 Content-Type: application/json
 
 {
-    "id": 0,
-    "name": "Blackie5"
+    "id": 1,
+    "name": "Blackie2"
 }
 
 
 ### Update dogs
-PUT {{host}}/ HTTP/1.1
+PUT {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDEwMzE4fQ.bOs0LTv4E4YXm5zAXzhcCT5m7Askj7EmuWxkJHxLyWc HTTP/1.1
 Content-Type: application/json
 
 {
